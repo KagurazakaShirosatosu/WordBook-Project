@@ -12,7 +12,19 @@
 <div class="box">
 <h2>赶紧滚去背单词！</h2>
 <p class="main">
-
+<?php
+session_start();
+$un=$_SESSION["username"];
+if ($un == "")
+{
+	echo "<script>alert('少年你的体位不对啊');document.location.href='./index.php'</script>";
+	exit;
+}
+else
+{
+	
+}
+?>
 <center>
 <?php require("./word_result.php"); ?><p></p>
 <a href="./index.php">返回首页</a>

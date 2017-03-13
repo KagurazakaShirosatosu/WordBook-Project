@@ -23,7 +23,7 @@ if ($un == "")
 }
 else
 {
-	echo "<font color=white>欢迎回来，$un</font>";
+	echo "<font color=white> $un ，请问今天要来点青花鱼吗？</font>";
 }
 ?>
 

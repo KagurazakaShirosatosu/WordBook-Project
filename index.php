@@ -19,6 +19,7 @@
 <input class="message2" type="submit" name="submit" value="登陆" />
 <br />
 <?php
+session_start();
 if (getenv("HTTP_CLIENT_IP"))
 	    $ip = getenv("HTTP_CLIENT_IP");
 	else if(getenv("HTTP_X_FORWARDED_FOR"))
@@ -26,6 +27,7 @@ if (getenv("HTTP_CLIENT_IP"))
 	else if(getenv("REMOTE_ADDR"))
 	    $ip = getenv("REMOTE_ADDR");
 	else $ip = "Unknow";
+$_SESSION["ip"] = $ip;
 echo "<font color=white>您的IP地址 $ip 已经被记录，可以安全地使用。</font>";
 ?>
 </div>
