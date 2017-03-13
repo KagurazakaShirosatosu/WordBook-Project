@@ -15,7 +15,7 @@
 
 <center>
 <?php require("./word_result.php"); ?><p></p>
-<a href="/index.php">返回首页</a>
+<a href="./index.php">返回首页</a>
 </center>
 
 

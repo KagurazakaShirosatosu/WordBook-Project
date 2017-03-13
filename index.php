@@ -29,8 +29,7 @@ if (getenv("HTTP_CLIENT_IP"))
 	else $ip = "Unknow";
 echo "<font color=white>您的IP地址 $ip 已经被记录，可以安全地使用。</font>";
 ?>
-<a href="./list.php">查看单词表</a><a href="./functon.php">查看功能表</a>
-<a href="./staff.php">查看staff表</a>
+<a href="./function.php">查看功能表</a>
 </div>
 <p class="foot"><label><font color=white>YOE背单词委员会</font></p>
 </body></html>

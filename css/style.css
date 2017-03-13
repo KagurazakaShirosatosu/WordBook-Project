@@ -16,10 +16,6 @@ body
 	
     /*background:#9999FF;*/
 	text-align:center;
-	user-select:none;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
 	background: url('../images/bg.jpg') center;
 	background-repeat:no-repeat;
 	background-attachment:fixed
@@ -214,3 +210,22 @@ td
 	background-color:#A7C942;
 	color:#ffffff;
 }
+
+.heimu, .heimu a, a .heimu, .heimu a.new
+{
+	background-color: #252525;
+    color: #252525;
+    text-shadow: none;
+    cursor: help;
+}
+
+
+
+
+
+
+
+
+
+
+
