@@ -13,6 +13,7 @@
 <h2>今天有哪些单词不记得了呢？</h2>
 <p class="main">
 
+<a href="./index.php">返回</a>
 <a href="./list.php?hide=none">查看单词表</a>
 <a href="./list.php?hide=foreign">查看单词表（隐藏外文）</a>
 <a href="./list.php?hide=chinese">查看单词表（隐藏中文）</a>
