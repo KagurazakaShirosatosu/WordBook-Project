@@ -1,4 +1,5 @@
 <?php
+$name = $_SESSION["username"];
 $con = mysqli_connect("localhost","word","word","word");
 $hide = $_GET["hide"];
 
@@ -31,7 +32,7 @@ if ($guo)
 {
 	if ($hide == "foreign")
 	{
-		$jia = mysqli_query($con,"SELECT add_time,word,mean,note FROM word")
+		$jia = mysqli_query($con,"SELECT `add_time`, `word`, `mean`, `note` FROM `word` WHERE namae = '$name'")
 		or die('数据表炸了');
 		echo '<table border="2">';
 		echo
@@ -54,7 +55,7 @@ if ($guo)
 	}
 	else if ($hide == "chinese")
 	{
-		$jia = mysqli_query($con,"SELECT add_time,word,mean,note FROM word")
+		$jia = mysqli_query($con,"SELECT `add_time`, `word`, `mean`, `note` FROM `word` WHERE namae = '$name'")
 		or die('数据表炸了');
 		echo '<table border="2">';
 		echo
@@ -77,7 +78,7 @@ if ($guo)
 	}
 	else if ($hide = "none")
 	{
-		$jia = mysqli_query($con,"SELECT add_time,word,mean,note FROM word")
+		$jia = mysqli_query($con,"SELECT `add_time`, `word`, `mean`, `note` FROM `word` WHERE namae = '$name'")
 		or die('数据表炸了');
 		echo '<table border="2">';
 		echo

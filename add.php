@@ -1,5 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
+session_start();
+$name = $_SESSION['username'];
 date_default_timezone_set("Asia/Shanghai");
 $word = $_POST["word"];
 $mean = $_POST["mean"];
@@ -14,7 +16,7 @@ if(!$con)
     die('数据库炸了');
 }
 
-$sql_insert = "insert into word (add_time,word,mean,note) values('$date','$word','$mean','$note')";
+$sql_insert = "insert into word (namae,add_time,word,mean,note) values('$name','$date','$word','$mean','$note')";
 $res_insert = mysqli_query($con,$sql_insert);
 if($res_insert)
 {
