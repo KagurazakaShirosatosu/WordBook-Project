@@ -45,7 +45,7 @@ if ($guo)
 		{
 			echo "<tr>";
 			echo "<td>" . $sheng['add_time'] . "</td>";
-			echo "<td class=heimu title="真的不记得了么 要不要再想想qwq">" . $sheng['word'] . "</td>";
+			echo "<td class=heimu title=\"真的不记得了么 要不要再想想qwq\">" . $sheng['word'] . "</td>";
 			echo "<td>" . $sheng['mean'] . "</td>";
 			echo "<td>" . $sheng['note'] . "</td>";
 			echo "</tr>";
@@ -69,7 +69,7 @@ if ($guo)
 			echo "<tr>";
 			echo "<td>" . $sheng['add_time'] . "</td>";
 			echo "<td>" . $sheng['word'] . "</td>";
-			echo "<td class=heimu title="真的不记得了么 要不要再想想qwq">" . $sheng['mean'] . "</td>";
+			echo "<td class=heimu title=\"真的不记得了么 要不要再想想qwq\">" . $sheng['mean'] . "</td>";
 			echo "<td>" . $sheng['note'] . "</td>";
 			echo "</tr>";
 		}
