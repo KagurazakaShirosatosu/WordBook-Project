@@ -6,6 +6,7 @@ $mean = $_POST["mean"];
 $note = $_POST["note"];
 $date = date('Y-m-d H:i:s');
 
+require("./stopXSS.php");
 
 @$con = mysqli_connect("localhost","word","word","word");
 if(!$con)
