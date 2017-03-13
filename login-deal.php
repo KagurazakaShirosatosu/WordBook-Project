@@ -5,6 +5,19 @@ session_start();
 	{
 		$a = $_POST["name"];
 		$b = $_POST["password"];
+		
+		$str1 = $a;
+		$str1 = str_replace('"','&quot;',$str1);
+		$str1 = str_replace('<','&lt;',$str1);
+		$str1 = str_replace('>','&gt;',$str1);
+		$a = str_replace('\'','&#x27;',$str1);
+
+		$str2 = $b;
+		$str2 = str_replace('"','&quot;',$str2);
+		$str2 = str_replace('<','&lt;',$str2);
+		$str2 = str_replace('>','&gt;',$str2);
+		$b = str_replace('\'','&#x27;',$str2);
+		
 		if($a == "")
 		{
 			echo "<script>alert('请输入用户名！'); history.go(-1);</script>";
@@ -26,8 +39,8 @@ session_start();
             if($num)
             {
 				$_SESSION['username'] = $a;
-				echo $_SESSION['username'];
-                echo "<script>alert('欢迎回来');document.location.href='./main.php'</script>";
+				echo "请稍微等待一下。";
+                echo "<script>alert('对有机生命体接触用资料库以确已你的身份，欢迎回来。');document.location.href='./main.php'</script>";
 
             }
             else
