@@ -27,5 +27,5 @@ else
 	echo "<script>alert('添加失败'); history.go(-1);</script>";
 }
 
-mysql_close();
+mysql_close($con);
 ?>

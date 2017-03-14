@@ -17,7 +17,7 @@ session_start();
 $un=$_SESSION["username"];
 if ($un == "")
 {
-	echo "<script>alert('少年你的体位不对啊');document.location.href='./index.php'</script>";
+	echo "<script>alert('对有机生命体接触用资料库不能识别你的身份，你将被驱逐。');document.location.href='./index.php'</script>";
 	exit;
 }
 else
@@ -26,8 +26,8 @@ else
 }
 ?>
 <center>
-<?php require("./word_result.php"); ?><p></p>
-<a href="./index.php">返回首页</a>
+<?php require("./function/word_result.php"); ?><p></p>
+<a href="./main.php">返回首页</a>
 </center>
 
 

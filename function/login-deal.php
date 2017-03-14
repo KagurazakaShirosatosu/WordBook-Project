@@ -47,7 +47,7 @@ $date = date('Y-m-d H:i:s');
 				$res_insert = @mysqli_query($con,$sql_insert);
 				$sql_insert = "UPDATE `classmate` SET `lastlog_time` = '$date' WHERE `classmate`.`namae` = '$a'";
 				$res_insert = @mysqli_query($con,$sql_insert);
-                echo "<script>alert('对有机生命体接触用资料库以确已你的身份，欢迎回来。');document.location.href='./main.php'</script>";
+                echo "<script>alert('对有机生命体接触用资料库已匹配你的身份，欢迎回来。');document.location.href='../main.php'</script>";
 
             }
             else

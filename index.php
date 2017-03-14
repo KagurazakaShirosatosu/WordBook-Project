@@ -13,7 +13,7 @@
 <h2>dalao还没有登录！</h2>
 <p class="main">
 
-<form action="login-deal.php" method="post">
+<form action="./function/login-deal.php" method="post">
 <label><font color=white>君の名は：</font><input type="text" name="name"/></label><p></p>
 <label><font color=white>你的密码：</font><input type="password" name="password"/></label><p></p>
 <input class="message2" type="submit" name="submit" value="登陆" />
