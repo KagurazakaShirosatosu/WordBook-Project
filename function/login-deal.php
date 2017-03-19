@@ -1,9 +1,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-session_start();
 $ip = $_SESSION["ip"];
+date_default_timezone_set("Asia/Shanghai");
 $date = date('Y-m-d H:i:s');
-
 	if(isset($_POST["submit"]) && $_POST["submit"] == "登陆")
 	{
 		$a = $_POST["name"];
@@ -41,13 +40,14 @@ $date = date('Y-m-d H:i:s');
             $num = @mysqli_num_rows($result);
             if($num)
             {
-				$_SESSION['username'] = $a;
+				setcookie("username",$a, time()+3600*2,"/");
+				var_dump($_COOKIE["username"]);
 				echo "请稍微等待一下。";
 				$sql_insert = "UPDATE `classmate` SET `lastlog_ip` = '$ip' WHERE `classmate`.`namae` = '$a'";
 				$res_insert = @mysqli_query($con,$sql_insert);
 				$sql_insert = "UPDATE `classmate` SET `lastlog_time` = '$date' WHERE `classmate`.`namae` = '$a'";
 				$res_insert = @mysqli_query($con,$sql_insert);
-                echo "<script>alert('对有机生命体接触用资料库已匹配你的身份，欢迎回来。');document.location.href='../main.php'</script>";
+                echo "<script>alert('对有机生命体接触用资料库已匹配你的身份，欢迎回来。');document.location.href='../main.php';</script>";
 
             }
             else

@@ -1,5 +1,5 @@
 <?php
-$name = $_SESSION["username"];
+$name = $_COOKIE["username"];
 $con = mysqli_connect("localhost","word","word","word");
 $hide = $_GET["hide"];
 

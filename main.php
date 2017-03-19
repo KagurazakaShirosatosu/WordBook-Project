@@ -14,8 +14,7 @@
 <p class="main">
 
 <?php
-session_start();
-$un=$_SESSION["username"];
+$un = $_COOKIE["username"];
 if ($un == "")
 {
 	echo "<script>alert('少年你的体位不对啊');document.location.href='./index.php'</script>";
@@ -44,6 +43,7 @@ if (getenv("HTTP_CLIENT_IP"))
 echo "<font color=white>您的IP地址 $ip 已经被记录，可以安全地使用。</font>";
 ?>
 <a href="./flist.php">查看功能表</a>
+<a href="./function/logout.php">退出登陆</a>
 </div>
 <p class="foot"><label><font color=white>YOE背单词委员会</font></p>
 </body></html>

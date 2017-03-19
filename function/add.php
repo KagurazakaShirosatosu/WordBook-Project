@@ -1,7 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-session_start();
-$name = $_SESSION['username'];
+$name = $_COOKIE['username'];
 date_default_timezone_set("Asia/Shanghai");
 $word = $_POST["word"];
 $mean = $_POST["mean"];

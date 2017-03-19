@@ -13,8 +13,7 @@
 <h2>赶紧滚去背单词！</h2>
 <p class="main">
 <?php
-session_start();
-$un=$_SESSION["username"];
+$un=$_COOKIE["username"];
 if ($un == "")
 {
 	echo "<script>alert('对有机生命体接触用资料库不能识别你的身份，你将被驱逐。');document.location.href='./index.php'</script>";
