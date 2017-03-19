@@ -8,6 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
 <link rel="stylesheet" href="css/style.css">
+<link href="https://youon.moe/pic/logo1.png" rel="shortcut icon">
 </head>
 <body>
 <?php

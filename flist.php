@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>You-On EDU 背单词计划</title>
 <meta name="ViewPort" content="initial-scale=1, minimum-scale=1, width=device-width">
@@ -6,6 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
 <link rel="stylesheet" href="css/style.css">
+<link href="https://youon.moe/pic/logo1.png" rel="shortcut icon">
 </head>
 <body>
 <p class="title">You-On EDU 背单词计划</p>
