@@ -41,7 +41,6 @@ $date = date('Y-m-d H:i:s');
             if($num)
             {
 				setcookie("username",$a, time()+3600*2,"/");
-				var_dump($_COOKIE["username"]);
 				echo "请稍微等待一下。";
 				$sql_insert = "UPDATE `classmate` SET `lastlog_ip` = '$ip' WHERE `classmate`.`namae` = '$a'";
 				$res_insert = @mysqli_query($con,$sql_insert);
