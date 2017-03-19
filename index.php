@@ -10,6 +10,18 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<?php
+$un = $_COOKIE["username"];
+if ($un != "")
+{
+	echo "<script>document.location.href='./main.php'</script>";
+	exit;
+}
+else
+{
+	
+}
+?>
 <p class="title">You-On EDU 背单词计划</p>
 <div class="box">
 <h2>dalao还没有登录！</h2>
