@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php
-$un = $_COOKIE["username"];
+@$un = $_COOKIE["username"];
 if ($un != "")
 {
 	echo "<script>document.location.href='./main.php'</script>";
