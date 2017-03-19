@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-startup-image" href="images/9433274_p0.jpg">
+<meta name="apple-mobile-web-app-status-bar-style" content=#b1678b>
+<link rel="apple-touch-startup-image" href="images/9433274_p0.jpg"> 
+<link rel="apple-touch-startup-image" href="images/9433274_p0.jpg" sizes="640x920">
+<link rel="apple-touch-startup-image" href="images/9433274_p0.jpg" sizes="640x1096">
+<link rel="apple-touch-startup-image" href="images/9433274_p0.jpg" sizes="750x1294">
+<link rel="apple-touch-startup-image" href="images/9433274_p0.jpg" sizes="1242x2148">
+
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>You-On EDU 背单词计划</title>
 <meta name="ViewPort" content="initial-scale=1, minimum-scale=1, width=device-width">
