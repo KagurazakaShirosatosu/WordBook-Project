@@ -13,15 +13,35 @@
 <body>
 <p class="title">You-On EDU 背单词计划</p>
 <div class="box">
-<h2>今天有哪些单词不记得了呢？</h2>
+<h2>现在是默写时间</h2>
 <p class="main">
+<?php
+$un=$_COOKIE["username"];
+if ($un == "")
+{
+	echo "<script>alert('对有机生命体接触用资料库不能识别你的身份，你将被驱逐。');document.location.href='./index.php'</script>";
+	exit;
+}
+else
+{
+	
+}
+?>
 
-<a href="./index.php">返回</a>
-<a href="./list.php?hide=none">查看单词表</a>
-<a href="./list.php?hide=foreign">查看单词表（隐藏外文）</a>
-<a href="./list.php?hide=chinese">查看单词表（隐藏中文）</a>
-<a href="./dic.php">默写</a>
-<a href="./staff.php">查看staff表</a>
-</div>
-<p class="foot"><label><font color=white>YOE背单词委员会</font></p>
-</body></html>
+<center>
+<?php
+session_start();
+if (isset($_SESSION["word0"])){
+	require("./function/question.php");
+}
+elseif (!isset($_SESSION["word0"])){
+	require("./function/ce_random.php");
+	echo "<font color='white'>随机单词生成完毕，请刷新页面。</font>";
+}else {
+	echo "Something error, Please contact the admin.";
+}
+?>
+<a href="./main.php">返回首页</a>
+</center>
+
+

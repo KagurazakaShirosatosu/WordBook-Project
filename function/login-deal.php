@@ -30,7 +30,7 @@ $date = date('Y-m-d H:i:s');
 		}
 		else
 		{
-		    $con = @mysqli_connect("localhost","word","word","word");
+		    $con = @mysqli_connect("localhost","","","");
 		    if(!$con)
 		    {
 		        die('数据库挂了');

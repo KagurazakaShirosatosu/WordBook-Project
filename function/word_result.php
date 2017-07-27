@@ -1,6 +1,6 @@
 <?php
 $name = $_COOKIE["username"];
-$con = mysqli_connect("localhost","word","word","word");
+$con = mysqli_connect("localhost","","","");
 $hide = $_GET["hide"];
 
 if ($hide == "foreign")
