@@ -32,7 +32,7 @@ else
 
 <?php
 session_start();
-$con=mysqli_connect("localhost","word","word","word");
+$con=mysqli_connect("localhost","","","");
 $count=9;
 $times=0;
 
